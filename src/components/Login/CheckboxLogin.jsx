@@ -9,7 +9,7 @@ export default function CheckboxLogin() {
   };
 
   return (
-    <div className="pt-2 flex items-center space-x-1 mb-4">
+    <div className="pt-2 flex items-center space-x-1 mb-6 w-full">
       <button
         type="button"
         onClick={handleCheckboxChange}
@@ -19,7 +19,7 @@ export default function CheckboxLogin() {
       </button>
       <label
         htmlFor="keepLoggedIn"
-        className="font-lexend-medium text-black text-xxs"
+        className="font-lexend-medium text-black text-sm w-full"
       >
         Keep me logged in
       </label>

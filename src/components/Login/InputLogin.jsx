@@ -9,31 +9,31 @@ export default function InputLogin() {
   };
 
   return (
-    <div className="flex flex-col space-y-4">
+    <div className="flex flex-col space-y-4 mb-6">
       <div className="flex flex-col">
         <label
           htmlFor="inputemail"
-          className="font-lexend-regular text-black text-xxs"
+          className="font-lexend-regular text-black text-sm"
         >
           Email
         </label>
         <input
           type="email"
           id="inputemail"
-          className="p-2 border border-black rounded-md font-lexend-regular text-black text-xxs placeholder-gray-500"
+          className="p-2 border border-black rounded-md font-lexend-regular text-black text-sm placeholder-black w-full"
           placeholder="ratubioindonesia@gmail.com"
         />
       </div>
       <div className="flex flex-col">
         <label
           htmlFor="inputpassword"
-          className="font-lexend-regular text-black text-xxs"
+          className="font-lexend-regular text-black text-sm"
         ></label>
         <div className="relative">
           <input
             type={passwordVisible ? "text" : "password"}
             id="inputpassword"
-            className="p-2 border border-black rounded-md font-lexend-regular text-black text-xxs placeholder-gray-500 w-full"
+            className="p-2 border border-black rounded-md font-lexend-regular text-black text-sm placeholder-black w-full"
             placeholder="Password"
           />
           <button

@@ -25,15 +25,18 @@ export default function CardProduct() {
       <h6 className="text-2xl font-bold mb-6">Our Product</h6>
       <div className="flex flex-wrap justify-center gap-6">
         {products.map((product, index) => (
-          <div key={index} className="card bg-base-100 w-80 shadow-xl">
-            <figure>
+          <div
+            key={index}
+            className="card bg-base-100 w-80 shadow-xl flex flex-col"
+          >
+            <figure className="w-full h-48 overflow-hidden">
               <img
                 src={product.imageUrl}
                 alt={product.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-full object-cover"
               />
             </figure>
-            <div className="card-body">
+            <div className="card-body p-4 flex flex-col justify-between">
               <h2 className="card-title text-lg font-bold">{product.title}</h2>
               <p className="text-sm">{product.description}</p>
             </div>
