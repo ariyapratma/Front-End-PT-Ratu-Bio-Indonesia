@@ -6,7 +6,7 @@ import ButtonSeeMore from "../ButtonSeeMore/ButtonSeeMore";
 import Certificate from "../Certificate/Certificate";
 import Excellence from "../Excellence/Excellence";
 import Review from "../Review/Review";
-import ImageGallery from "../HeroSection/HeroSection";
+import HeroSection from "../HeroSection/HeroSection";
 
 function Home() {
   useEffect(() => {
@@ -18,7 +18,7 @@ function Home() {
       <Navbar />
       <main className="flex-grow mt-16 mb-16">
         {" "}
-        <ImageGallery />
+        <HeroSection/>
         <CardProduct />
         <ButtonSeeMore />
         <Certificate />

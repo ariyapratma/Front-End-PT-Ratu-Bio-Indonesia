@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,49 +36,67 @@ export default function Navbar() {
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-4 text-sm md:text-base">
           <Link
-            className="hover:text-gray-800 font-bold font-lexend transition-colors"
-            to="/"
+            className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
+              location.pathname === "/" || location.pathname === "/home"
+                ? "text-blue-500"
+                : ""
+            }`}
+            to="/home"
           >
             Home
           </Link>
           <Link
-            className="hover:text-gray-800 font-regular font-lexend transition-colors"
+            className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
+              location.pathname === "/about" ? "text-blue-500" : ""
+            }`}
             to="/about"
           >
             About Us
           </Link>
           <Link
-            className="hover:text-gray-800 font-regular font-lexend transition-colors"
+            className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
+              location.pathname === "/contact" ? "text-blue-500" : ""
+            }`}
             to="/contact"
           >
             Contact
           </Link>
           <Link
-            className="hover:text-gray-800 font-regular font-lexend transition-colors"
+            className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
+              location.pathname === "/product" ? "text-blue-500" : ""
+            }`}
             to="/product"
           >
             Product
           </Link>
           <Link
-            className="hover:text-gray-800 font-regular font-lexend transition-colors"
+            className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
+              location.pathname === "/order" ? "text-blue-500" : ""
+            }`}
             to="/order"
           >
             Order
           </Link>
           <Link
-            className="hover:text-gray-800 font-regular font-lexend transition-colors"
+            className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
+              location.pathname === "/maklon" ? "text-blue-500" : ""
+            }`}
             to="/maklon"
           >
             Maklon
           </Link>
           <Link
-            className="hover:text-gray-800 font-regular font-lexend transition-colors"
+            className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
+              location.pathname === "/login" ? "text-blue-500" : ""
+            }`}
             to="/login"
           >
             Login
           </Link>
           <Link
-            className="hover:text-gray-800 font-regular font-lexend transition-colors"
+            className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
+              location.pathname === "/register" ? "text-blue-500" : ""
+            }`}
             to="/register"
           >
             Register
@@ -113,8 +132,12 @@ export default function Navbar() {
         <ul className="md:hidden bg-white text-gray-800 rounded-md shadow-lg mt-2 p-4 absolute top-14 left-0 right-0 z-50">
           <li>
             <Link
-              className="block px-4 py-2 font-bold font-lexend hover:bg-gray-100"
-              to="/"
+              className={`block px-4 py-2 font-bold font-lexend hover:bg-gray-100 ${
+                location.pathname === "/" || location.pathname === "/home"
+                  ? "bg-gray-100"
+                  : ""
+              }`}
+              to="/home"
               onClick={() => setMenuOpen(false)}
             >
               Home
@@ -122,7 +145,9 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="block px-4 py-2 font-regular font-lexend hover:bg-gray-100"
+              className={`block px-4 py-2 font-regular font-lexend hover:bg-gray-100 ${
+                location.pathname === "/about" ? "bg-gray-100" : ""
+              }`}
               to="/about"
               onClick={() => setMenuOpen(false)}
             >
@@ -131,7 +156,9 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="block px-4 py-2 font-regular font-lexend hover:bg-gray-100"
+              className={`block px-4 py-2 font-regular font-lexend hover:bg-gray-100 ${
+                location.pathname === "/contact" ? "bg-gray-100" : ""
+              }`}
               to="/contact"
               onClick={() => setMenuOpen(false)}
             >
@@ -140,7 +167,9 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="block px-4 py-2 font-regular font-lexend hover:bg-gray-100"
+              className={`block px-4 py-2 font-regular font-lexend hover:bg-gray-100 ${
+                location.pathname === "/product" ? "bg-gray-100" : ""
+              }`}
               to="/product"
               onClick={() => setMenuOpen(false)}
             >
@@ -149,7 +178,9 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="block px-4 py-2 font-regular font-lexend hover:bg-gray-100"
+              className={`block px-4 py-2 font-regular font-lexend hover:bg-gray-100 ${
+                location.pathname === "/order" ? "bg-gray-100" : ""
+              }`}
               to="/order"
               onClick={() => setMenuOpen(false)}
             >
@@ -158,7 +189,9 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="block px-4 py-2 font-regular font-lexend hover:bg-gray-100"
+              className={`block px-4 py-2 font-regular font-lexend hover:bg-gray-100 ${
+                location.pathname === "/maklon" ? "bg-gray-100" : ""
+              }`}
               to="/maklon"
               onClick={() => setMenuOpen(false)}
             >
@@ -167,7 +200,9 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="block px-4 py-2 font-regular font-lexend hover:bg-gray-100"
+              className={`block px-4 py-2 font-regular font-lexend hover:bg-gray-100 ${
+                location.pathname === "/login" ? "bg-gray-100" : ""
+              }`}
               to="/login"
               onClick={() => setMenuOpen(false)}
             >
@@ -176,7 +211,9 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="block px-4 py-2 font-regular font-lexend hover:bg-gray-100"
+              className={`block px-4 py-2 font-regular font-lexend hover:bg-gray-100 ${
+                location.pathname === "/register" ? "bg-gray-100" : ""
+              }`}
               to="/register"
               onClick={() => setMenuOpen(false)}
             >
