@@ -1,20 +1,23 @@
 export default function CardProduct() {
   const products = [
     {
-      title: "Maklon Product 1",
-      description: "Description for Maklon Product 1",
+      title: "Essential Oil",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque leo.",
       imageUrl:
         "https://mashmoshem.co.id/wp-content/uploads/2024/04/Mash-Moshem-Indonesia-Pabrik-Maklon-Kosmetik-Jawa-Timur.webp",
     },
     {
-      title: "Maklon Product 2",
-      description: "Description for Maklon Product 2",
+      title: "Hand Sanitizer",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque leo.",
       imageUrl:
         "https://murnicare.co.id/wp-content/uploads/2024/03/skin-products-different-recipients-composition_11zon-scaled.jpg",
     },
     {
-      title: "Maklon Product 3",
-      description: "Description for Maklon Product 3",
+      title: "Desinfektant",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque leo.",
       imageUrl:
         "https://yurora.com/wp-content/uploads/2023/06/Tips-Memilih-Maklon-Kosmetik-untuk-Bisnis-Anda.jpeg",
     },
@@ -22,12 +25,12 @@ export default function CardProduct() {
 
   return (
     <div className="flex flex-col items-center p-6">
-      <h6 className="text-2xl font-bold mb-6">Our Product</h6>
-      <div className="flex flex-wrap justify-center gap-6">
+      <h6 className="text-2xl font-lexend font-medium mb-6">Our Product</h6>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((product, index) => (
           <div
             key={index}
-            className="card bg-base-100 w-80 shadow-xl flex flex-col"
+            className="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
           >
             <figure className="w-full h-48 overflow-hidden">
               <img
@@ -36,9 +39,9 @@ export default function CardProduct() {
                 className="w-full h-full object-cover"
               />
             </figure>
-            <div className="card-body p-4 flex flex-col justify-between">
-              <h2 className="card-title text-lg font-bold">{product.title}</h2>
-              <p className="text-sm">{product.description}</p>
+            <div className="p-4">
+              <h2 className="text-lg font-bold mb-2">{product.title}</h2>
+              <p className="text-sm text-gray-600">{product.description}</p>
             </div>
           </div>
         ))}

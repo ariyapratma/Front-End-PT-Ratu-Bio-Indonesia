@@ -1,8 +1,12 @@
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
-import Carousel from "../Carousel/Carousel";
 import CardProduct from "../CardProduct/CardProduct";
 import Footer from "../Footer/Footer";
+import ButtonSeeMore from "../ButtonSeeMore/ButtonSeeMore";
+import Certificate from "../Certificate/Certificate";
+import Excellence from "../Excellence/Excellence";
+import Review from "../Review/Review";
+import ImageGallery from "../HeroSection/HeroSection";
 
 function Home() {
   useEffect(() => {
@@ -14,9 +18,12 @@ function Home() {
       <Navbar />
       <main className="flex-grow mt-16 mb-16">
         {" "}
-        {/* Add margin to account for fixed Navbar and Footer */}
-        <Carousel />
+        <ImageGallery />
         <CardProduct />
+        <ButtonSeeMore />
+        <Certificate />
+        <Excellence />
+        <Review />
       </main>
       <Footer />
     </div>
