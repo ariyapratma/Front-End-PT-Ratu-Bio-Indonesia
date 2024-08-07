@@ -3,6 +3,8 @@ import Navbar from "../Navbar/Navbar";
 import HeroSection from "../HeroSection/HeroSection";
 import AboutUsSection from "./AboutUsSection";
 import HeroVisionMision from "../HeroVisionMision/HeroVisionMision";
+import OurTeam from "./OurTeam";
+import OurLegal from "./OurLegal";
 import Footer from "../Footer/Footer";
 
 function AboutUs() {
@@ -18,6 +20,8 @@ function AboutUs() {
         <HeroSection />
         <AboutUsSection />
         <HeroVisionMision />
+        <OurTeam />
+        <OurLegal />
       </main>
       <Footer />
     </div>

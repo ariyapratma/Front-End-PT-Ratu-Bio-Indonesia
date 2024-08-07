@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
-import CardProduct from "../CardProduct/CardProduct";
+import HeroSectionOwner from "./HeroSectionOwner";
+import JourneyBioQueen from "./JourneyBioQueen";
 import Footer from "../Footer/Footer";
 import ButtonSeeMore from "../ButtonSeeMore/ButtonSeeMore";
 import Certificate from "../Certificate/Certificate";
@@ -18,10 +19,11 @@ function Home() {
       <Navbar />
       <main className="flex-grow mt-16 mb-16">
         {" "}
-        <HeroSection/>
-        <CardProduct />
-        <ButtonSeeMore />
+        <HeroSection />
+        <HeroSectionOwner />
         <Certificate />
+        <JourneyBioQueen />
+        <ButtonSeeMore />
         <Excellence />
         <Review />
       </main>

@@ -29,12 +29,12 @@ const advantages = [
 export default function Excellence() {
   return (
     <div className="flex flex-col items-center p-6">
-      <h6 className="text-2xl text-black font-lexend font-medium mb-6">
+      <h6 className="text-5xl text-black font-lexend font-medium mb-6">
         What Makes Us Different?
       </h6>
-      <p className="text-center mb-10 max-w-xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in
-        scelerisque leo.
+      <p className="text-center font-lexend font-regular mb-10 max-w-xl">
+        We believe our unwavering quality and dedication to our clients' success
+        makes us the right choice for all your needs.
       </p>
       <div className="flex flex-wrap justify-center gap-8">
         {advantages.map((advantage, index) => (
