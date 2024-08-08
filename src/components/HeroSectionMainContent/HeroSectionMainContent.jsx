@@ -1,18 +1,20 @@
 import { motion } from "framer-motion";
 
-export default function HeroSection() {
+export default function HeroSectionMainContent() {
   return (
-    <div className="relative w-full h-[400px] bg-gray-200 overflow-hidden">
+    <div className="relative w-full h-[900px] bg-gray-200 overflow-hidden rounded-lg">
       <motion.img
-        src="/public/FlayerFix.png"
-        alt="Hero Image"
+        // src="https://blog.greenlifeharvest.com/wp-content/uploads/2024/05/maklon-skincare-halal-di-tangerang.jpg"
+        // src="https://bdsgp.my.id/img/800/bsoai4w7bsoam7mw1j_2/fuIMCaLQovmULG5fumnqA4IxlTCwICSViHhPJgeUsGg.jpg"
+        // alt="Hero Image"
         className="absolute inset-0 w-full h-full object-cover"
         initial={{ y: -50 }}
         animate={{ y: 0 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       />
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4"
+        // className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white p-4"
+        className="absolute inset-0 flex flex-col items-center justify-center text-white p-4"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
@@ -23,7 +25,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          Jasa Maklon Sabun Dan Skincare
+          Jasa Maklon Sanitasi dan Higiene
         </motion.h1>
         <motion.p
           className="text-lg lg:text-xl mb-6"

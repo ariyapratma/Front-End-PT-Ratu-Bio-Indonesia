@@ -1,13 +1,15 @@
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
-import HeroSectionOwner from "./HeroSectionOwner";
-import JourneyBioQueen from "./JourneyBioQueen";
-import Footer from "../Footer/Footer";
-import ButtonSeeMore from "../ButtonSeeMore/ButtonSeeMore";
+import HeroSectionMainContent from "../HeroSectionMainContent/HeroSectionMainContent";
+import Flyer from "../Flyer/Flyer";
+import HeroSectionCompany from "./HeroSectionCompany";
 import Certificate from "../Certificate/Certificate";
+import Service from "../Services/Service";
+import HeroSectionVideo from "./HeroSectionVideo";
+import ButtonSeeMore from "../ButtonSeeMore/ButtonSeeMore";
 import Excellence from "../Excellence/Excellence";
 import Review from "../Review/Review";
-import HeroSection from "../HeroSection/HeroSection";
+import Footer from "../Footer/Footer";
 
 function Home() {
   useEffect(() => {
@@ -19,10 +21,12 @@ function Home() {
       <Navbar />
       <main className="flex-grow mt-16 mb-16">
         {" "}
-        <HeroSection />
-        <HeroSectionOwner />
+        <HeroSectionMainContent />
+        <Flyer />
+        <HeroSectionCompany />
         <Certificate />
-        <JourneyBioQueen />
+        <Service />
+        <HeroSectionVideo />
         <ButtonSeeMore />
         <Excellence />
         <Review />

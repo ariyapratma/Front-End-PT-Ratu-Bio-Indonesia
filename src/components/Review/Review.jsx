@@ -4,9 +4,8 @@ import { FaStar } from "react-icons/fa";
 
 const reviews = [
   {
-    name: "John Doe",
-    avatar:
-      "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
+    name: "Suki Daisuki",
+    avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg",
     rating: 5,
     comment: "Excellent service and quality products! Highly recommend.",
   },
@@ -29,7 +28,7 @@ const reviews = [
 export default function Review() {
   return (
     <div className="flex flex-col items-center p-6">
-      <h6 className="text-2xl text-black font-lexend font-medium mb-6">
+      <h6 className="text-5xl text-black font-lexend font-medium mb-6">
         Reviews
       </h6>
       <div className="flex flex-wrap justify-center gap-8">

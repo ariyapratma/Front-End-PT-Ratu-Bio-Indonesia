@@ -30,11 +30,11 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center p-2 md:p-4">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img className="w-16 md:w-20" src="/public/Icon.png" alt="Logo" />
+          <img className="w-16 md:w-14" src="/public/Icon.png" alt="Logo" />
         </Link>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex space-x-4 text-sm md:text-base">
+        <div className="hidden md:flex space-x-4 text-sm md:text-base gap-8">
           <Link
             className={`hover:text-gray-800 font-regular font-lexend transition-colors ${
               location.pathname === "/" || location.pathname === "/home"

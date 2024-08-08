@@ -32,7 +32,7 @@ export default function Certificate() {
         Certificate Approved
       </h6>
       <p className="text-center font-lexend font-regular mb-10 max-w-xl">
-        Best quality from us to you have quality assurance.
+        Kualitas terbaik dari kami untuk Anda memiliki jaminan kualitas.
       </p>
       <div className="flex flex-wrap justify-center gap-14">
         {certificates.map((certificate, index) => (

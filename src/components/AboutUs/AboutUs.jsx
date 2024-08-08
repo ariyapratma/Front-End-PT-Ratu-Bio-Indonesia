@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
-import HeroSection from "../HeroSection/HeroSection";
+import HeroSectionMainContent from "../HeroSectionMainContent/HeroSectionMainContent";
 import AboutUsSection from "./AboutUsSection";
 import HeroVisionMision from "../HeroVisionMision/HeroVisionMision";
 import OurTeam from "./OurTeam";
@@ -17,7 +17,7 @@ function AboutUs() {
       <Navbar />
       <main className="flex-grow mt-16 mb-16">
         {""}
-        <HeroSection />
+        <HeroSectionMainContent />
         <AboutUsSection />
         <HeroVisionMision />
         <OurTeam />
